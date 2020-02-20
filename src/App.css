@@ -149,6 +149,27 @@
   font-family: Quicksand;
 }
 
+.divider {
+  height: 75px;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  font-family: Quicksand;
+  font-style: italic;
+  color: rgba(72, 72, 72, 1);
+}
+
+.quote-suffix {
+  font-family: Quicksand;
+  margin-left: 10px;
+  color: rgba(72, 72, 72, 1);
+}
+
 .who-header {
   font-size: 40px;
   border-bottom: 1px solid rgba(72, 72, 72, 1);

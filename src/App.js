@@ -58,6 +58,10 @@ class App extends Component {
                 <button>Contact us</button>
               </div>
               </div>
+              <div className="divider">
+                <span className="quote">"Absorb what is useful, Discard what is not, Add what is uniquely your own."</span>
+                <span className="quote-suffix">- Bruce Lee, 1961</span>
+              </div>
               <div className="about-us flex-row">
                 <div className="flex2 people flex-row">
                   <div className="person flex1">
