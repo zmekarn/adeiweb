@@ -17,6 +17,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    document.title = "ADEI"
     window.addEventListener('scroll', (ev) => {
       const { scrollY } = ev.path[1];
       if (scrollY > 0 && !this.state.topbarSolid) {
