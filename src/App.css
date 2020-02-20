@@ -28,7 +28,11 @@
   animation: invis 0.3s;
 }
 
-.topbar > .topbar-menu > span {
+.topbar > .topbar-menu > a {
+  text-decoration: none;
+}
+
+.topbar > .topbar-menu > a > span {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding:  10px 20px;
@@ -36,7 +40,7 @@
   transition: background-color 0.2s;
 }
 
-.topbar > .topbar-menu > span:hover {
+.topbar > .topbar-menu > a > span:hover {
   cursor: pointer;
   background-color: gray;
   transition: background-color 0.2s;
@@ -75,6 +79,12 @@
 
 .bot {
   height: 700px;
+  width: 100%;
+}
+
+.portfolio-body {
+  background: linear-gradient(rgba(72, 72, 72, 1), rgba(82, 82, 82, 1));
+  height: 100%;
   width: 100%;
 }
 
