@@ -46,23 +46,55 @@
   transition: background-color 0.2s;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-button-container {
+  width: 20%;
+  padding-right: 150px;
+}
+
+.top-button-container > button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 20px 90px;  
+  background-color: rgb(34, 177, 76);
+  border-radius: 40px;
+  font-family: Quicksand;
+  font-size: 17px;
+  width: 300px;
+  animation: invis2 1s;
+}
+
+.top-button-container > button:hover {
+  background-color: rgb(24, 157, 56);
+  cursor: pointer;
+}
+
+
 .top {
   height: 400px;
-  width: 100%;
   background-color: gray;
   background-image: url("../public/coding4.jpg");
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
+  /* justify-content: center; */
+  align-items: center;
   background-position: -75px;
-  padding-left: 125px;
+  flex-direction: row;
+}
+
+.top-left {
+  padding-left: 150px;
+  animation: invis2 1s;
 }
 
 .top-descr {
   color: white;
   font-family: Quicksand;
-  width: 20%;
+  width: 40%;
   /* line-height: 30px;Ø */
   font-size: 50px;
   text-align: start;
@@ -71,7 +103,7 @@
 }
 
 .top-text {
-  width: 40%;
+  width: 70%;
   color: white;
   font-family: Quicksand;
   text-align: start;
@@ -110,6 +142,15 @@
   }
   100% {
     background: linear-gradient(rgba(72, 72, 72, 1), rgba(82, 82, 82, 1));
+  }
+}
+
+@keyframes invis2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

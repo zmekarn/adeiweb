@@ -47,8 +47,13 @@ class App extends Component {
           <Switch>
             <Route exact path="/">
               <div className="top">
+              <div className="flex-column top-left">
                 <span className="top-descr">We are ADEI</span>
                 <span className="top-text">Vi er de beste konsulentene i hele verden. Lei oss og gi oss mye spenn. Vi kan mange programmeringsspråk og vil gjerne lære flere og. Så lenge det ikke er knockout.js</span>
+              </div>
+              <div className="top-button-container">
+                <button>Contact us</button>
+              </div>
               </div>
               <div className="bot">
               </div>
