@@ -19,11 +19,13 @@
 }
 
 .topbar.solid {
-  background: radial-gradient(#212121, #525252);
+  /* background: linear-gradient(#424242, #525252); */
+  background: linear-gradient(rgba(72, 72, 72, 1), rgba(82, 82, 82, 1));
   transition: background-color 0.5s;
   -webkit-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 0px 5px 0px rgba(0,0,0,0.75);
+  animation: invis 0.3s;
 }
 
 .topbar > .topbar-menu > span {
@@ -40,7 +42,6 @@
   transition: background-color 0.2s;
 }
 
-
 .top {
   height: 400px;
   width: 100%;
@@ -49,19 +50,66 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background-position: -75px;
+  padding-left: 125px;
 }
 
 .top-descr {
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 40%;
-  line-height: 30px;
+  font-family: Quicksand;
+  width: 20%;
+  /* line-height: 30px;Ø */
   font-size: 50px;
+  text-align: start;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white
+}
+
+.top-text {
+  width: 40%;
+  color: white;
+  font-family: Quicksand;
+  text-align: start;
 }
 
 .bot {
   height: 700px;
   width: 100%;
+}
+
+@keyframes invis {
+  0% {
+    background: linear-gradient(rgba(72, 72, 72, 0), rgba(82, 82, 82, 0));
+  }
+  20% {
+    background: linear-gradient(rgba(72, 72, 72, 0.2), rgba(82, 82, 82, 0.2));
+
+  }
+  40% {
+    background: linear-gradient(rgba(72, 72, 72, 0.4), rgba(82, 82, 82, 0.4));
+
+  }
+  60% {
+    background: linear-gradient(rgba(72, 72, 72, 0.6), rgba(82, 82, 82, 0.6));
+
+  }
+  80% {
+    background: linear-gradient(rgba(72, 72, 72, 0.8), rgba(82, 82, 82, 0.8));
+
+  }
+  100% {
+    background: linear-gradient(rgba(72, 72, 72, 1), rgba(82, 82, 82, 1));
+  }
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand'), local('Quicksand'),
+       url('../public/Quicksand-VariableFont_wght.ttf') format('embedded-opentype'), /* IE6-IE8 */
+       url('../public/Quicksand-VariableFont_wght.ttf') format('woff2'), /* Super Modern Browsers */
+       url('../public/Quicksand-VariableFont_wght.ttf') format('woff'), /* Modern Browsers */
+       url('../public/Quicksand-VariableFont_wght.ttf') format('truetype'); /* Safari, Android, iOS */
 }

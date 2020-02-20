@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import ting from '../public/ting2.svg';
-import bg from '../public/coding.jpg';
 import './App.css';
 import Logo from './icons/Logo';
 
@@ -32,7 +29,7 @@ class App extends Component {
       <div className="App">
         <div className={`topbar ${this.state.topbarSolid ? 'solid' : null}`}>
           <div className="topbar-logo">
-            <Logo color={'white'} size={5} />
+            <Logo color={'white'} size={6.5} />
           </div>
           <div className="topbar-menu">
             <span>HOME</span>
@@ -42,6 +39,7 @@ class App extends Component {
         </div>
         <div className="top">
           <span className="top-descr">We are ADEI</span>
+          <span className="top-text">Vi er de beste konsulentene i hele verden. Lei oss og gi oss mye spenn. Vi kan mange programmeringsspråk og vil gjerne lære flere og. Så lenge det ikke er knockout.js</span>
         </div>
         <div className="bot"></div>
         <div>
