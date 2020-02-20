@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Logo from './icons/Logo';
+import eirik from '../public/eirik_png2.png';
+import magnus from '../public/magnus2.jpg';
 import {
   BrowserRouter as Router,
   Switch,
@@ -55,7 +57,19 @@ class App extends Component {
                 <button>Contact us</button>
               </div>
               </div>
-              <div className="bot">
+              <div className="about-us flex-row">
+                <div className="flex2 people flex-row">
+                  <div className="person flex1">
+                    <img src={eirik} />
+                  </div>
+                  <div className="person flex1">
+                    <img src={magnus} />
+                  </div>
+                </div>
+                <div className="flex2 flex-column who-content">
+                  <span className="who-header">Who are we?</span>
+                  <span className="who-text">Vi er to bois som liker å progge. Vi trenger mye spenn så vi kan kjøpe oss fete biler og kødde rundt.</span>
+                </div>
               </div>
             </Route>
             <Route exact path="/portfolio">
