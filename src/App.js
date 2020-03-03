@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import _ from 'lodash';
 import { faPhone, faEnvelope, faTools } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -73,13 +74,15 @@ class App extends Component {
                   <div className="person flex1 flex-column">
                     <img src={eirik} />
                     <span className="person-name">Eirik Eilertsen</span>
-                    <span className="person-title">Co-founder, Junior Consultant</span>
+                    <span className="person-title">Co-founder, Senior Consultant</span>
+                    <span className="person-title">Full-stack developer</span>
                     <a href="mailto:eirik@adei.no" className="person-email">eirik@adei.no</a>
                   </div>
                   <div className="person flex1 flex-column">
                     <img src={magnus} />
                     <span className="person-name">Magnus Adler</span>
                     <span className="person-title">Co-founder, Senior Consultant</span>
+                    <span className="person-title">Full-stack developer</span>
                     <a href="mailto:magnus@adei.no" className="person-email">magnus@adei.no</a>
                   </div>
                 </div>

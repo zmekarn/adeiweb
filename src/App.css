@@ -4,6 +4,7 @@
   height: 100%;
   width: 100%;
   min-width: 600px;
+  scroll-behavior: smooth;
 }
 
 .topbar {
@@ -87,7 +88,7 @@
   align-items: center;
   background-position: -75px;
   flex-direction: column;
-  animation: move_img 3s;
+  animation: move_img 2s;
 }
 
 .top-left {
