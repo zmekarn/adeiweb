@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div className={`topbar ${this.state.topbarSolid ? 'solid' : null}`}>
+          <div className={`topbar${this.state.topbarSolid ? ' solid' : ''}`}>
             <div className="topbar-logo">
               <Logo color={'white'} size={6.5} />
             </div>
@@ -68,43 +68,37 @@ class App extends Component {
                 <button onClick={scroll}>Contact us</button>
               </div>
               </div>
-              {/* <div className="divider">
-                <span className="quote">"Absorb what is useful, Discard what is not, Add what is uniquely your own."</span>
-                <span className="quote-suffix">- Bruce Lee, 1961</span>
-              </div> */}
               <div className="about-us flex-row">
                 <div className="flex2 people flex-row">
                   <div className="person flex1 flex-column">
                     <img src={eirik} />
                     <span className="person-name">Eirik Eilertsen</span>
-                    <span className="person-title">Junior Consultant</span>
+                    <span className="person-title">Co-founder, Junior Consultant</span>
                     <a href="mailto:eirik@adei.no" className="person-email">eirik@adei.no</a>
                   </div>
                   <div className="person flex1 flex-column">
                     <img src={magnus} />
                     <span className="person-name">Magnus Adler</span>
-                    <span className="person-title">Senior Consultant</span>
+                    <span className="person-title">Co-founder, Senior Consultant</span>
                     <a href="mailto:magnus@adei.no" className="person-email">magnus@adei.no</a>
                   </div>
                 </div>
                 <div className="flex2 flex-column who-content">
-                  <span className="who-header">Who are we?</span>
-                  <span className="who-text">Vi er to bois som lever for det vi jobber med. Vi kan mye ting</span>
+                  <span className="who-header">WHO ARE WE?</span>
+                  <span className="who-text">
+                    ADEI is a small consultancy located in the Oslo area. The company was founded in March 2020 with a mission to deliver high quality work and engagement
+                    to our customers.
+                  </span>
                 </div>
               </div>
               <div className="what-we-do flex-column">
-                <h1>What do we do?</h1>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis maximus felis, a 
-                venenatis elit. Nullam auctor elit in orci rhoncus, sed pharetra nisi sollicitudin. Vivamus
-                 non libero id neque pellentesque ullamcorper sagittis sed lorem. Duis ac nunc neque. Cras 
-                 viverra sollicitudin purus non malesuada. Ut a nunc lorem. Mauris euismod blandit nisi quis 
-                 sagittis. Nulla facilisi. Phasellus viverra ac tortor sit amet aliquam. In condimentum lectus 
-                 felis, id efficitur lacus maximus a. Integer et enim nunc.</span>
+                <h1>WHAT DO WE DO?</h1>
+                <span>We deliver high quality code to our customers.</span>
               </div>
               <div className="what-we-do flex-column">
-                <h1>Some other category</h1>
-                <span>Lorem s viverra ac tortor sit amet aliquam. In condimentum lectus 
-                 felis, id efficitur lacus maximus a. Integer et enim nunc.</span>
+                <h1>WHY DO WE DO IT?</h1>
+                <span>Our passion for our work is what makes Adei special. We believe that by keeping a small but well *something* team, we can give our customers
+                the engagement and passion of a regular in-house team.</span>
               </div>
               <div id="socials" className="contact-us">
                 <h1>Contact Information</h1>
