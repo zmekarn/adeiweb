@@ -47,7 +47,7 @@ class App extends Component {
         <div className="App">
           <div className={`topbar${this.state.topbarSolid ? ' solid' : ''}`}>
             <div className="topbar-logo">
-              <Logo color={'white'} size={6.5} />
+              <Logo color={'#ccc'} size={6.5} />
             </div>
             <div className="topbar-menu">
               <Link to="/">
@@ -69,6 +69,18 @@ class App extends Component {
                 <button onClick={scroll}>Contact us</button>
               </div>
               </div>
+              <div className="what-we-do flex-column">
+                <h1>WHAT DO WE DO?</h1>
+                <hr />
+                <span>We deliver high quality code to our customers. ADEI is a small consultancy located in the Oslo area. The company was founded in March 2020 with a mission to deliver high quality work and engagement
+                    to our customers.</span>
+              </div>
+              <div className="what-we-do flex-column">
+                <h1>WHY DO WE DO IT?</h1>
+                <hr />
+                <span>Our passion for our work is what makes Adei special. We believe that by keeping a small but well *something* team, we can give our customers
+                the engagement and passion of a regular in-house team.</span>
+              </div>
               <div className="about-us flex-row">
                 <div className="flex2 people flex-row">
                   <div className="person flex1 flex-column">
@@ -88,20 +100,12 @@ class App extends Component {
                 </div>
                 <div className="flex2 flex-column who-content">
                   <span className="who-header">WHO ARE WE?</span>
+                  <hr />
                   <span className="who-text">
                     ADEI is a small consultancy located in the Oslo area. The company was founded in March 2020 with a mission to deliver high quality work and engagement
                     to our customers.
                   </span>
                 </div>
-              </div>
-              <div className="what-we-do flex-column">
-                <h1>WHAT DO WE DO?</h1>
-                <span>We deliver high quality code to our customers.</span>
-              </div>
-              <div className="what-we-do flex-column">
-                <h1>WHY DO WE DO IT?</h1>
-                <span>Our passion for our work is what makes Adei special. We believe that by keeping a small but well *something* team, we can give our customers
-                the engagement and passion of a regular in-house team.</span>
               </div>
               <div id="socials" className="contact-us">
                 <h1>Contact Information</h1>
