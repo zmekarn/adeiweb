@@ -47,7 +47,7 @@ class App extends Component {
         <div className="App">
           <div className={`topbar${this.state.topbarSolid ? ' solid' : ''}`}>
             <div className="topbar-logo">
-              <Logo color={'#ccc'} size={6.5} />
+              <Logo color={'white'} size={6.5} />
             </div>
             <div className="topbar-menu">
               <Link to="/">
@@ -61,22 +61,22 @@ class App extends Component {
           <Switch>
             <Route exact path="/">
               <div className="top">
-              <div className="flex-column top-left">
-                <span className="top-descr">ADEI</span>
-                <span className="top-text">We commit</span>
-              </div>
-              <div className="top-button-container">
-                <button onClick={scroll}>Contact us</button>
-              </div>
+                <div className="flex-column top-left">
+                  <span className="top-descr">Delivering high quality code and teamwork to our customers</span>
+                  <span className="top-text">Something something something</span>
+                </div>
+                <div className="top-button-container">
+                  <button onClick={scroll}>Contact us</button>
+                </div>
               </div>
               <div className="what-we-do flex-column">
-                <h1>WHAT DO WE DO?</h1>
+                <h1>THE IDEA</h1>
                 <hr />
                 <span>We deliver high quality code to our customers. ADEI is a small consultancy located in the Oslo area. The company was founded in March 2020 with a mission to deliver high quality work and engagement
                     to our customers.</span>
               </div>
               <div className="what-we-do flex-column">
-                <h1>WHY DO WE DO IT?</h1>
+                <h1>THE MOTIVATION</h1>
                 <hr />
                 <span>Our passion for our work is what makes Adei special. We believe that by keeping a small but well *something* team, we can give our customers
                 the engagement and passion of a regular in-house team.</span>
