@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
 import _ from 'lodash';
 import { faPhone, faEnvelope, faTools } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -84,14 +82,14 @@ class App extends Component {
               <div className="about-us flex-row">
                 <div className="flex2 people flex-row">
                   <div className="person flex1 flex-column">
-                    <img src={eirik} />
+                    <img src={eirik} alt=""/>
                     <span className="person-name">Eirik Eilertsen</span>
                     <span className="person-title">Co-founder, Senior Consultant</span>
                     <span className="person-title">Full-stack developer</span>
                     <a href="mailto:eirik@adei.no" className="person-email">eirik@adei.no</a>
                   </div>
                   <div className="person flex1 flex-column">
-                    <img src={magnus} />
+                    <img src={magnus} alt=""/>
                     <span className="person-name">Magnus Adler</span>
                     <span className="person-title">Co-founder, Senior Consultant</span>
                     <span className="person-title">Full-stack developer</span>
@@ -116,8 +114,11 @@ class App extends Component {
                   </div>
                   <div className="contact-list-text">
                     <FontAwesomeIcon className="contact-list-item-icon" icon={faPhone} />
-                    <span className="contact-list-item-text"><a className="contact-list-item-link" href="tel:90400602">90400602</a> (Magnus Adler)</span>
-                  </div>
+                    <span className="contact-list-item-text">
+                      <a className="contact-list-item-link" href="tel:90400602">90400602</a> / <a className="contact-list-item-link" href="tel:99507882">99507882</a>
+                         <span> (Magnus Adler / Eirik Eilertsen)</span>
+                      </span>
+                  </div>                  
                 </div>
                 <div className="socials">
                   <a className="socials-link" href=""><FontAwesomeIcon className="socials-icon" icon={faFacebookSquare} /></a>
