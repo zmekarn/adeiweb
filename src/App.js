@@ -48,16 +48,16 @@ class App extends Component {
               <Logo color={'white'} size={6.5} />
             </div>
             <div className="topbar-menu">
-              <Link to="/">
+              <Link to="/adeiweb/">
                 <span>HOME</span>
               </Link>
-              <Link to="/portfolio">
+              <Link to="/adeiweb/portfolio">
                 <span>PORTFOLIO</span>
               </Link>
             </div>
           </div>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/adeiweb/">
               <div className="top">
                 <div className="flex-column top-left">
                   <span className="top-descr">Delivering high quality code and teamwork to our customers</span>
@@ -119,7 +119,7 @@ class App extends Component {
               </div>
               
             </Route>
-            <Route exact path="/portfolio">
+            <Route exact path="/adeiweb/portfolio">
               <div className="portfolio-body">
                 <FontAwesomeIcon className="under-construction-icon" icon={faTools} />
                 <span className="under-construction-text">This page is under construction</span>
